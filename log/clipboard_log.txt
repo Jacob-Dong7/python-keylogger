@@ -1,0 +1,2 @@
+print("Clipboard Log Cleared")
+EXIT
