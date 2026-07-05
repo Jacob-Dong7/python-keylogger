@@ -14,7 +14,14 @@ class Logger():
             print("Exiting...")
             return False
         try:
-            print(f"Key: {key.char}")
+            char = key.char
+            if char.isdigit():
+                print(f"Digit Key: {key.char}")
+            elif char.isalpha():
+                print(f"Character Key: {key.char}")
+            elif not char.isalnum():
+                print(f"Special Characters: {key.char}")
+
         except AttributeError:
             print(f"Special Key: {key}")
 
